@@ -13,7 +13,7 @@ public class VapeTransformer {
             for (File file : Objects.requireNonNull(filePath.listFiles())) {
                 if (file.isFile() && file.getName().endsWith(".class")) {
                     for (Transformer transformer : transformers) {
-                        transformer.execute();
+                        transformer.execute(file);
                     }
                 }
             }
