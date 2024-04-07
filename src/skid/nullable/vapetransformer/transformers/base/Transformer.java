@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Transformer {
 
-    public void execute(File file) {
+    public void execute() {
         throw new UnsupportedOperationException("No overrides found for transformer, please remove the transformer from transformers.");
     }
 }
